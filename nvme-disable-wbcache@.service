@@ -1,0 +1,8 @@
+[Unit]
+Description=Disable write caching on specified nvme drive
+Documentation=https://vadosware.io/post/everything-ive-seen-on-optimizing-postgres-on-zfs-on-linux/#solution-force-proper-disk-syncing
+Documentation=file://etc/udev/rules.d/99-local-disable-nvme-write-caching.rules
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/nvme set-feature /dev/%i -f 6 -v 0

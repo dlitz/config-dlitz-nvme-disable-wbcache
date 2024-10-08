@@ -1,18 +1,21 @@
 Source: config-dlitz-nvme-disable-wbcache
-Section: unknown
+Section: admin
 Priority: optional
 Maintainer: Darsey Litzenberger <dlitz@dlitz.net>
 Rules-Requires-Root: no
 Build-Depends:
  debhelper-compat (= 13),
 Standards-Version: 4.7.0
-Homepage: <insert the upstream URL, if relevant>
-#Vcs-Browser: https://salsa.debian.org/debian/config-dlitz-nvme-disable-wbcache
-#Vcs-Git: https://salsa.debian.org/debian/config-dlitz-nvme-disable-wbcache.git
+Homepage: https://github.com/dlitz/config-dlitz-nvme-disable-wbcache
+Vcs-Browser: https://github.com/dlitz/config-dlitz-nvme-disable-wbcache
+Vcs-Git: https://github.com/dlitz/config-dlitz-nvme-disable-wbcache.git
 
 Package: config-dlitz-nvme-disable-wbcache
 Architecture: all
 Depends:
+ nvme-cli,
  ${misc:Depends},
-Description: <insert up to 60 chars description>
- <Insert long description, indented with spaces.>
+Description: Disables NVMe write-back caching by default via udev.
+ This provides a udev rule that disables write-back caching on all NVMe
+ devices.  This can be useful for consumer-grade NVMe SSDs that don't correctly
+ handle power failure.

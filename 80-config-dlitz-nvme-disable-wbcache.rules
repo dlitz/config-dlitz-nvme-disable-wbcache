@@ -1,0 +1,3 @@
+# This disables nvme write-back caching.  Useful for consumer drives that don't handle power-failure well.
+# See https://vadosware.io/post/everything-ive-seen-on-optimizing-postgres-on-zfs-on-linux/#solution-force-proper-disk-syncing
+ACTION!="remove", SUBSYSTEM=="nvme", KERNEL=="nvme[0-9]*", TAG+="systemd", ENV{SYSTEMD_WANTS}+="nvme-disable-wbcache@%k.service"
