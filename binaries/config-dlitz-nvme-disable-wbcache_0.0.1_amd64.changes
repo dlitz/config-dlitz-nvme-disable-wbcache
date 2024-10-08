@@ -1,0 +1,42 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Tue,  8 Oct 2024 15:22:35 MDT
+Source: config-dlitz-nvme-disable-wbcache
+Binary: config-dlitz-nvme-disable-wbcache
+Architecture: source all
+Version: 0.0.1
+Distribution: dlitz-aptly
+Urgency: medium
+Maintainer: Darsey Litzenberger <dlitz@dlitz.net>
+Changed-By: Darsey Litzenberger <dlitz@dlitz.net>
+Description:
+ config-dlitz-nvme-disable-wbcache - Disables NVMe write-back caching by default via udev.
+Checksums-Sha1:
+ 76bcb75d75fd5c96690a97371dcc74f8762151bf 1183 config-dlitz-nvme-disable-wbcache_0.0.1.dsc
+ fbbaddf82570453be425a262b9f4ad364e46a849 2428 config-dlitz-nvme-disable-wbcache_0.0.1.tar.xz
+ 32df0bcf3cb254fbada865233c291d60bbc0d7c7 2928 config-dlitz-nvme-disable-wbcache_0.0.1_all.deb
+ 8a75601c84ed13707a1cca8b4d9b983f9d54bd14 5502 config-dlitz-nvme-disable-wbcache_0.0.1_amd64.buildinfo
+Checksums-Sha256:
+ 198c49f4561f4e26de960b94427ab4e73d1c1aa86290b9d12f369360fcd6c4d0 1183 config-dlitz-nvme-disable-wbcache_0.0.1.dsc
+ dad9af91803deb73b44b55e38f81122b25af8d16b25ccf342f35cd3ea3dad913 2428 config-dlitz-nvme-disable-wbcache_0.0.1.tar.xz
+ 06bb179630de870974f457aadc780057032c6f03ef70917dc4ba42681b2e699c 2928 config-dlitz-nvme-disable-wbcache_0.0.1_all.deb
+ 7f49c74d0c51d8528b7300fc53d99477b1e6edc3d0a7694679a413397f88388d 5502 config-dlitz-nvme-disable-wbcache_0.0.1_amd64.buildinfo
+Changes:
+ config-dlitz-nvme-disable-wbcache (0.0.1) dlitz-aptly; urgency=medium
+ .
+   * Initial release.
+Files:
+ a1d9e623396811cef05d4740cd43b0ad 1183 admin optional config-dlitz-nvme-disable-wbcache_0.0.1.dsc
+ 4470b0e944d5dec7b14ceeaeddb14c0a 2428 admin optional config-dlitz-nvme-disable-wbcache_0.0.1.tar.xz
+ c51f78eab9c9415a1ea9db713244ae4d 2928 admin optional config-dlitz-nvme-disable-wbcache_0.0.1_all.deb
+ a14d12aca1c8b129e4b068aac3536dc7 5502 admin optional config-dlitz-nvme-disable-wbcache_0.0.1_amd64.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iIYEARYKAC4WIQTWkd0xNWtIORg6n8DjQLK2WJpUpAUCZwWipRAcZGxpdHpAZGxp
+dHoubmV0AAoJEONAsrZYmlSkJzkBALlpttiit9Ixg6ZlHxcXP7KnRx38U3ADDNW3
+c2g4Vs+mAQCCZPC0ZRvLgs5vgfp48Yaz7pb3UHbtNX9Sj+adonpcCA==
+=jbky
+-----END PGP SIGNATURE-----
